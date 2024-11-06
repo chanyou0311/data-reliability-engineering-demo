@@ -61,3 +61,11 @@ models:
         description: "所有者の作成日時"
       - name: owner_updated_at
         description: "所有者の更新日時"
+
+  - name: book_count_by_owner_prefecture
+    description: "所有者の都道府県ごとの本の数"
+    columns:
+      - name: owner_prefecture
+        description: "所有者の都道府県"
+      - name: book_count
+        description: "本の数"
