@@ -2,13 +2,13 @@ with books as (
     select
         *
     from
-        {{ ref('books') }}
+        {{ source('main', 'books') }}
 ),
 users as (
     select
         *
     from
-        {{ ref('users') }}
+        {{ source('main', 'users') }}
 )
 
 select

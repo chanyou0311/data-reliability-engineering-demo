@@ -1,5 +1,40 @@
 version: 2
 
+sources:
+  - name: main
+    tables:
+      - name: users
+        description: "ユーザーの一覧"
+        columns:
+          - name: id
+            description: "ユーザーID"
+          - name: name
+            description: "ユーザーの名前"
+          - name: email
+            description: "ユーザーのメールアドレス"
+          - name: age
+            description: "ユーザーの年齢"
+          - name: prefecture
+            description: "ユーザーの都道府県"
+          - name: created_at
+            description: "ユーザーの作成日時"
+          - name: updated_at
+            description: "ユーザーの更新日時"
+
+      - name: books
+        description: "本の一覧"
+        columns:
+          - name: id
+            description: "本のID"
+          - name: title
+            description: "本のタイトル"
+          - name: owner_id
+            description: "本の所有者"
+          - name: published_date
+            description: "本の出版日"
+          - name: price
+            description: "本の価格"
+
 models:
   - name: books_with_owner
     description: "所有者情報を含む本の一覧"
