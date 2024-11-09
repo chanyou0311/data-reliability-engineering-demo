@@ -9,5 +9,5 @@ select
     owner_prefecture,
     count(*) as book_count
 from
-    books
+    {{ ref('books_with_owner') }}
 group by owner_prefecture
